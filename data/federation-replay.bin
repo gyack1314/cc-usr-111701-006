@@ -1,0 +1,118 @@
+{
+  "kind": "federation-replay",
+  "rows": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://friend-a.example.test/inbox",
+        "expect_headers_absent": []
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "date": "Thu, 12 Nov 2026 10:00:00 GMT",
+          "digest": "SHA-256=Nm3aqvDbEJ0EsC6pmuWWAC5+vX8CkeIr86U9PshJ9gQ=",
+          "signature": "keyId=\"https://friend-a.example.test/users/li#key\",algorithm=\"hmac-sha256\",headers=\"(request-target) host date digest\",signature=\"VsTAfQ/MRxzapkCznNcsbLXfV19qIEjU5NspGGMghc4=\"",
+          "content-type": "application/activity+json"
+        },
+        "body_base64": "ewogICJAY29udGV4dCI6ICJodHRwczovL3d3dy53My5vcmcvbnMvYWN0aXZpdHlzdHJlYW1zIiwKICAib3JkZXJlZEl0ZW1zIjogWwogICAgewogICAgICAiaWQiOiAiaHR0cHM6Ly9mcmllbmQtYS5leGFtcGxlLnRlc3QvYWN0aXZpdGllcy9hMSIsCiAgICAgICJ0eXBlIjogIkFubm91bmNlIiwKICAgICAgImFjdG9yIjogImh0dHBzOi8vZnJpZW5kLWEuZXhhbXBsZS50ZXN0L3VzZXJzL2xpIiwKICAgICAgInB1Ymxpc2hlZCI6ICIyMDI2LTExLTEwVDA5OjMwOjAwWiIsCiAgICAgICJvYmplY3QiOiAiaHR0cHM6Ly9zb2NpYWwuZXhhbXBsZS50ZXN0L29iamVjdHMvMTkiCiAgICB9LAogICAgewogICAgICAiaWQiOiAiaHR0cHM6Ly9mcmllbmQtYS5leGFtcGxlLnRlc3QvYWN0aXZpdGllcy9hMiIsCiAgICAgICJ0eXBlIjogIkFubm91bmNlIiwKICAgICAgImFjdG9yIjogImh0dHBzOi8vZnJpZW5kLWEuZXhhbXBsZS50ZXN0L3VzZXJzL2xpIiwKICAgICAgInB1Ymxpc2hlZCI6ICIyMDI2LTExLTEwVDA5OjM1OjAwWiIsCiAgICAgICJvYmplY3QiOiAiaHR0cHM6Ly9zb2NpYWwuZXhhbXBsZS50ZXN0L29iamVjdHMvMjAiCiAgICB9CiAgXQp9"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://friend-a.example.test/inbox-alt",
+        "expect_headers_absent": []
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "date": "Thu, 12 Nov 2026 10:00:00 GMT",
+          "digest": "SHA-256=2s75AOOR7mOWnw689Ye+IICIBz+OAY88BwXYivnpitc=",
+          "signature": "keyId=\"https://friend-a.example.test/users/li#key\",algorithm=\"hmac-sha256\",headers=\"(request-target) host date digest\",signature=AAAAAAAAAAAAAAAA\"",
+          "content-type": "application/activity+json"
+        },
+        "body_base64": "ewogICJAY29udGV4dCI6ICJodHRwczovL3d3dy53My5vcmcvbnMvYWN0aXZpdHlzdHJlYW1zIiwKICAib3JkZXJlZEl0ZW1zIjogWwogICAgewogICAgICAiaWQiOiAiaHR0cHM6Ly9zb2NpYWwuZXhhbXBsZS50ZXN0L2FjdGl2aXRpZXMvZm9yZ2VkLXVwZGF0ZSIsCiAgICAgICJ0eXBlIjogIlVwZGF0ZSIsCiAgICAgICJhY3RvciI6ICJodHRwczovL3NvY2lhbC5leGFtcGxlLnRlc3QvdXNlcnMvbWVpIiwKICAgICAgInB1Ymxpc2hlZCI6ICIyMDI2LTExLTEwVDA5OjQwOjAwWiIsCiAgICAgICJvYmplY3QiOiAiaHR0cHM6Ly9zb2NpYWwuZXhhbXBsZS50ZXN0L29iamVjdHMvMTkiCiAgICB9CiAgXQp9"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://social.example.test/inbox",
+        "expect_headers_absent": []
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "date": "Thu, 12 Nov 2026 10:00:00 GMT",
+          "digest": "SHA-256=BL/ryg/NBKyg0+QQFN2ISiROUoyYZ24+szCCFG9ABWI=",
+          "signature": "keyId=\"https://social.example.test/users/mei#key\",algorithm=\"hmac-sha256\",headers=\"(request-target) host date digest\",signature=\"VtYxhpeNasPf/cbx0C69AikKVN/0l2fLNNVqmcrjrR0=\"",
+          "content-type": "application/activity+json"
+        },
+        "body_base64": "ewogICJAY29udGV4dCI6ICJodHRwczovL3d3dy53My5vcmcvbnMvYWN0aXZpdHlzdHJlYW1zIiwKICAib3JkZXJlZEl0ZW1zIjogWwogICAgewogICAgICAiaWQiOiAiaHR0cHM6Ly9zb2NpYWwuZXhhbXBsZS50ZXN0L2FjdGl2aXRpZXMvYzEiLAogICAgICAidHlwZSI6ICJDcmVhdGUiLAogICAgICAiYWN0b3IiOiAiaHR0cHM6Ly9zb2NpYWwuZXhhbXBsZS50ZXN0L3VzZXJzL21laSIsCiAgICAgICJwdWJsaXNoZWQiOiAiMjAyNi0xMS0xMFQwODowMDowMFoiLAogICAgICAib2JqZWN0IjogewogICAgICAgICJpZCI6ICJodHRwczovL3NvY2lhbC5leGFtcGxlLnRlc3Qvb2JqZWN0cy8xOSIsCiAgICAgICAgInR5cGUiOiAiTm90ZSIsCiAgICAgICAgImNvbnRlbnQiOiAi5YWs5byA5raI5oGvIgogICAgICB9CiAgICB9LAogICAgewogICAgICAiaWQiOiAiaHR0cHM6Ly9zb2NpYWwuZXhhbXBsZS50ZXN0L2FjdGl2aXRpZXMvdTEiLAogICAgICAidHlwZSI6ICJVcGRhdGUiLAogICAgICAiYWN0b3IiOiAiaHR0cHM6Ly9zb2NpYWwuZXhhbXBsZS50ZXN0L3VzZXJzL21laSIsCiAgICAgICJwdWJsaXNoZWQiOiAiMjAyNi0xMS0xMFQwOTowMDowMFoiLAogICAgICAib2JqZWN0IjogewogICAgICAgICJpZCI6ICJodHRwczovL3NvY2lhbC5leGFtcGxlLnRlc3Qvb2JqZWN0cy8xOSIsCiAgICAgICAgInR5cGUiOiAiTm90ZSIsCiAgICAgICAgImNvbnRlbnQiOiAi5L+u6K6i5raI5oGvIgogICAgICB9CiAgICB9LAogICAgewogICAgICAiaWQiOiAiaHR0cHM6Ly9zb2NpYWwuZXhhbXBsZS50ZXN0L2FjdGl2aXRpZXMvZDEiLAogICAgICAidHlwZSI6ICJEZWxldGUiLAogICAgICAiYWN0b3IiOiAiaHR0cHM6Ly9zb2NpYWwuZXhhbXBsZS50ZXN0L3VzZXJzL21laSIsCiAgICAgICJwdWJsaXNoZWQiOiAiMjAyNi0xMS0xMFQxMDowMDowMFoiLAogICAgICAib2JqZWN0IjogImh0dHBzOi8vc29jaWFsLmV4YW1wbGUudGVzdC9vYmplY3RzLzE5IgogICAgfSwKICAgIHsKICAgICAgImlkIjogImh0dHBzOi8vc29jaWFsLmV4YW1wbGUudGVzdC9hY3Rpdml0aWVzL3IxIiwKICAgICAgInR5cGUiOiAiVW5kbyIsCiAgICAgICJhY3RvciI6ICJodHRwczovL3NvY2lhbC5leGFtcGxlLnRlc3QvdXNlcnMvbWVpIiwKICAgICAgInB1Ymxpc2hlZCI6ICIyMDI2LTExLTEwVDExOjAwOjAwWiIsCiAgICAgICJvYmplY3QiOiB7CiAgICAgICAgImlkIjogImh0dHBzOi8vc29jaWFsLmV4YW1wbGUudGVzdC9hY3Rpdml0aWVzL2QxIiwKICAgICAgICAidHlwZSI6ICJEZWxldGUiCiAgICAgIH0KICAgIH0KICBdCn0="
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://friend-b.example.test/inbox",
+        "expect_headers_absent": []
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "date": "Thu, 12 Nov 2026 10:00:00 GMT",
+          "digest": "SHA-256=jgXXcIOCanYNY85QmJwxK7tbc8pcpEkwrxmIE7JOWyc=",
+          "signature": "keyId=\"https://friend-b.example.test/users/wang#key\",algorithm=\"hmac-sha256\",headers=\"(request-target) host date digest\",signature=\"G9hPCK8YSt8WFw2P2ovTU4VszkMkZkVYaCBXHHjm7NM=\"",
+          "content-type": "application/activity+json"
+        },
+        "body_base64": "ewogICJAY29udGV4dCI6ICJodHRwczovL3d3dy53My5vcmcvbnMvYWN0aXZpdHlzdHJlYW1zIiwKICAib3JkZXJlZEl0ZW1zIjogWwogICAgewogICAgICAiaWQiOiAiaHR0cHM6Ly9mcmllbmQtYi5leGFtcGxlLnRlc3QvYWN0aXZpdGllcy9iMSIsCiAgICAgICJ0eXBlIjogIkFubm91bmNlIiwKICAgICAgImFjdG9yIjogImh0dHBzOi8vZnJpZW5kLWIuZXhhbXBsZS50ZXN0L3VzZXJzL3dhbmciLAogICAgICAicHVibGlzaGVkIjogIjIwMjYtMTEtMTBUMDk6NDU6MDBaIiwKICAgICAgIm9iamVjdCI6ICJodHRwczovL3NvY2lhbC5leGFtcGxlLnRlc3Qvb2JqZWN0cy8xOSIKICAgIH0sCiAgICB7CiAgICAgICJpZCI6ICJodHRwczovL2ZyaWVuZC1iLmV4YW1wbGUudGVzdC9hY3Rpdml0aWVzL2IyIiwKICAgICAgInR5cGUiOiAiVW5kbyIsCiAgICAgICJhY3RvciI6ICJodHRwczovL2ZyaWVuZC1iLmV4YW1wbGUudGVzdC91c2Vycy93YW5nIiwKICAgICAgInB1Ymxpc2hlZCI6ICIyMDI2LTExLTEwVDEyOjAwOjAwWiIsCiAgICAgICJvYmplY3QiOiB7CiAgICAgICAgImlkIjogImh0dHBzOi8vZnJpZW5kLWIuZXhhbXBsZS50ZXN0L2FjdGl2aXRpZXMvYjEiLAogICAgICAgICJ0eXBlIjogIkFubm91bmNlIgogICAgICB9CiAgICB9CiAgXQp9"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://down.example.test/inbox"
+      },
+      "response": {
+        "status": null,
+        "headers": {},
+        "body_base64": "",
+        "error": "ConnectionError:连接被拒绝"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://social.example.test/objects/19"
+      },
+      "response": {
+        "status": 302,
+        "headers": {
+          "location": "https://cdn-archive.example.net/mirror/19"
+        },
+        "body_base64": ""
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://cdn-archive.example.net/mirror/19",
+        "expect_headers_absent": [
+          "authorization",
+          "cookie"
+        ]
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "date": "Thu, 12 Nov 2026 10:00:00 GMT",
+          "digest": "SHA-256=fgyZUR2df0RKbR/GIRKw/rAqIjibxeIc3mjxFxH0h6k=",
+          "signature": "keyId=\"https://social.example.test/users/mei#key\",algorithm=\"hmac-sha256\",headers=\"(request-target) host date digest\",signature=\"8LKZgLgleSoypqc2hLO87EIMSq6GW9/GtO8H2gJvxs4=\"",
+          "content-type": "application/activity+json"
+        },
+        "body_base64": "ewogICJpZCI6ICJodHRwczovL3NvY2lhbC5leGFtcGxlLnRlc3Qvb2JqZWN0cy8xOSIsCiAgInR5cGUiOiAiTm90ZSIsCiAgImNvbnRlbnQiOiAi5L+u6K6i5raI5oGvIiwKICAiYXR0cmlidXRlZFRvIjogImh0dHBzOi8vc29jaWFsLmV4YW1wbGUudGVzdC91c2Vycy9tZWkiCn0="
+      }
+    }
+  ]
+}

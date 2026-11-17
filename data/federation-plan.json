@@ -1,0 +1,37 @@
+{
+  "kind": "federation-fetch-plan",
+  "protocol": "activitypub-feed",
+  "collection": "federation-sample",
+  "replay": "federation-replay.bin",
+  "keys": {
+    "https://social.example.test/users/mei#key": "mei-shared-secret",
+    "https://friend-a.example.test/users/li#key": "li-shared-secret",
+    "https://friend-b.example.test/users/wang#key": "wang-shared-secret"
+  },
+  "endpoints": [
+    {
+      "role": "inbox",
+      "url": "https://friend-a.example.test/inbox"
+    },
+    {
+      "role": "inbox",
+      "url": "https://friend-a.example.test/inbox-alt"
+    },
+    {
+      "role": "inbox",
+      "url": "https://social.example.test/inbox"
+    },
+    {
+      "role": "inbox",
+      "url": "https://friend-b.example.test/inbox"
+    },
+    {
+      "role": "inbox",
+      "url": "https://down.example.test/inbox"
+    },
+    {
+      "role": "object",
+      "url": "https://social.example.test/objects/19"
+    }
+  ]
+}
