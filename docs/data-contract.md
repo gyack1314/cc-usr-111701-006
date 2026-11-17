@@ -7,3 +7,5 @@
 
 
 同集合第二次来源接收保存在 data/conflict-case.json。冲突事务必须保持第一份收据和旧投影。
+
+同集合第二次来源接收保存在 data/conflict-case.json。冲突事务必须保持第一份收据和旧投影。
