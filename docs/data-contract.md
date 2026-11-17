@@ -5,5 +5,3 @@
 ## 已接收的协议资料
 现有入口区分 actor、活动与对象 ID，保存 Create 和 Announce 的来源对象关系。它不校验 HTTP Signature，也不推断 Update、Delete 或 Undo 的作者权限。
 
-## 已接收的协议资料
-现有入口区分 actor、活动与对象 ID，保存 Create 和 Announce 的来源对象关系。它不校验 HTTP Signature，也不推断 Update、Delete 或 Undo 的作者权限。
