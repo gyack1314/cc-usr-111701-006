@@ -1,0 +1,52 @@
+{
+  "protocol": "activitypub-feed",
+  "collection": "sample-006",
+  "records": [
+    {
+      "kind": "actor",
+      "id": "actor-1",
+      "version": "v1",
+      "refs": [],
+      "payload": {
+        "source": "synthetic",
+        "position": 0
+      }
+    },
+    {
+      "kind": "activity",
+      "id": "activity-2",
+      "version": "v1",
+      "refs": [
+        "actor-1"
+      ],
+      "payload": {
+        "source": "synthetic",
+        "position": 1
+      }
+    },
+    {
+      "kind": "object",
+      "id": "object-3",
+      "version": "v1",
+      "refs": [
+        "activity-2"
+      ],
+      "payload": {
+        "source": "synthetic",
+        "position": 2
+      }
+    },
+    {
+      "kind": "undo",
+      "id": "undo-4",
+      "version": "v1",
+      "refs": [
+        "object-3"
+      ],
+      "payload": {
+        "source": "synthetic",
+        "position": 3
+      }
+    }
+  ]
+}

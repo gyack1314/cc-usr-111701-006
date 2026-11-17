@@ -1,18 +1,13 @@
 {
   "kind": "source-records",
+  "protocol": "activitypub-feed",
+  "collection": "sample-006",
   "assets": [
     {
-      "path": "capture.bin",
-      "bytes": 32,
-      "sha256": "8d4822b45635b61a94af37c2be8d8a96acccccdd2c05383752c4ed0bf51012c3"
+      "path": "source.json",
+      "bytes": 890,
+      "sha256": "96e7910866ec9fc353ff7fed6e19621052916743568cb0a13bbaea367b44e5bd"
     }
   ],
-  "chunk_lengths": [
-    1,
-    4,
-    7,
-    3,
-    17
-  ],
-  "close_epoch": true
+  "calls": []
 }
