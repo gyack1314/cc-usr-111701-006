@@ -1,0 +1,21 @@
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "orderedItems": [
+    {
+      "id": "https://social.example.test/activities/51",
+      "type": "Create",
+      "actor": "https://social.example.test/users/mei",
+      "object": {
+        "id": "https://social.example.test/objects/19",
+        "type": "Note",
+        "content": "公开消息"
+      }
+    },
+    {
+      "id": "https://social.example.test/activities/52",
+      "type": "Announce",
+      "actor": "https://other.example.test/users/li",
+      "object": "https://social.example.test/objects/19"
+    }
+  ]
+}

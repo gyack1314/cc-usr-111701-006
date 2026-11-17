@@ -1,0 +1,14 @@
+{
+  "kind": "source-records",
+  "protocol": "activitypub-feed",
+  "collection": "protocol-sample",
+  "source_url": "https://social.example.test/users/mei/inbox",
+  "assets": [
+    {
+      "path": "protocol-source.bin",
+      "bytes": 578,
+      "sha256": "78616afd22ff51a039ac2a5d7a21e6d1720ea401b480b8d481039e2fd85eeb40"
+    }
+  ],
+  "calls": []
+}
